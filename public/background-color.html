@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Background Color</title>
+		<link href="/src/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 class="topic-title">Tailwind Backgournd Color Properties</h1>
+
+		<!-- Background default Colors -->
+		<section class="section-container">
+			<h1 class="section-container__title">Default Backgournd Colors</h1>
+
+			<div class="section-container__content">
+				<div class="box bg-yellow-400">bg-yellow-400</div>
+				<div class="box bg-emerald-500">bg-emerald-500</div>
+				<div class="box bg-blue-600">bg-blue-600</div>
+
+				<div class="box bg-white text-black shadow">bg-white</div>
+				<div class="box bg-black">bg-black</div>
+
+				<div class="box bg-teal-700">bg-teal-700</div>
+				<div class="box bg-cyan-400">bg-cyan-400</div>
+			</div>
+		</section>
+
+		<!-- Background Opacity Modifier -->
+		<section class="section-container">
+			<h1 class="section-container__title">
+				Background Opacity Modifier
+				<p class="font-openSans font-normal text-base italic">
+					color class: <code>bg-red-500</code>
+				</p>
+			</h1>
+
+			<div class="section-container__content">
+				<div class="box bg-red-500/10">opaity-10%</div>
+				<div class="box bg-red-500/20">opaity-20%</div>
+				<div class="box bg-red-500/30">opaity-30%</div>
+				<div class="box bg-red-500/40">opaity-40%</div>
+				<div class="box bg-red-500/50">opaity-50%</div>
+				<div class="box bg-red-500/60">opaity-60%</div>
+				<div class="box bg-red-500/70">opaity-70%</div>
+				<div class="box bg-red-500/80">opaity-80%</div>
+				<div class="box bg-red-500/90">opaity-90%</div>
+			</div>
+		</section>
+
+		<!-- Background Arbitary Values -->
+		<section class="section-container">
+			<h1 class="section-container__title">Background Arbitary Values</h1>
+
+			<div class="section-container__content">
+				<div class="box bg-[#3f4470]">hex-#3f4470</div>
+				<div class="box bg-[rgb(200,100,50)]">rgb(200,100,50)</div>
+				<div class="box bg-[hsl(210,80%,50%)]">[hsl(210,80%,50%)</div>
+				<div class="box bg-[rgba(0,128,0,0.3)]">rgba(0,128,0,0.3)</div>
+				<div class="box bg-[oklch(65%_0.23_250)]">oklch(65%_0.23_250)</div>
+				<div class="box bg-[var(--variable-bg)]">opaity-60%</div>
+			</div>
+		</section>
+
+		<!-- Background for State Varients -->
+		<section class="section-container">
+			<h1 class="section-container__title">Background for State Varients</h1>
+
+			<div class="section-container__content">
+				<!-- hover -->
+				<div class="box box-varient bg-amber-100 hover:bg-amber-300">hover</div>
+
+				<!-- group hover -->
+				<div class="group p-4 shadow-sm/30">
+					<p class="box box-varient bg-slate-300 group-hover:bg-teal-500">
+						Hover the parent box
+					</p>
+				</div>
+
+				<!-- active -->
+				<button class="box box-varient bg-blue-50 active:bg-blue-400">
+					Hold click (active state)
+				</button>
+
+				<!-- focus -->
+				<input
+					type="text"
+					class="box box-varient bg-green-100 focus:bg-green-300"
+					placeholder="Click here to focus"
+				/>
+
+				<!-- pear focus -->
+				<div>
+					<input
+						type="text"
+						class="box box-varient peer"
+						placeholder="Focus me"
+					/>
+
+					<label class="box box-varient text-gray-700 peer-focus:bg-purple-300"
+						>This changes when the input is focused</label
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- Responsive Backgrounds -->
+		<section class="section-container">
+			<h1 class="section-container__title">Responsive Backgrounds</h1>
+
+			<div class="section-container__content responsive-background">
+				Responsive Background
+			</div>
+		</section>
+	</body>
+</html>

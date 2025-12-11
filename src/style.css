@@ -1,1 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+US+Modern:wght@100..400&display=swap');
 @import 'tailwindcss';
+
+@theme {
+	--font-playWrite: 'Playwrite US Modern', cursive;
+	--font-openSans: 'Open Sans', sans-serif;
+}
+
+@layer components {
+	.topic-title {
+		@apply text-3xl font-bold text-center my-8 font-playWrite;
+	}
+	.section-container {
+		@apply border p-4 m-4;
+	}
+	.section-container__title {
+		@apply text-xl font-bold pb-2 mb-4 border-b font-playWrite;
+	}
+	.section-container__content {
+		@apply flex flex-wrap justify-center items-center gap-4;
+	}
+	.box {
+		@apply w-36 h-10 p-2 flex flex-wrap items-center justify-center text-white font-semibold rounded;
+	}
+	.box-varient {
+		@apply shadow text-xs text-black transition-all ease-in-out duration-300;
+	}
+}
+
+:root {
+	--variable-bg: #633a8f;
+}
+
+.responsive-background {
+	@apply font-bold font-playWrite w-full h-20 bg-pink-300 sm:bg-yellow-400 md:bg-emerald-500 lg:bg-blue-600 xl:bg-purple-700;
+}
