@@ -11,11 +11,78 @@
 
 		<!-- Background Gradient directions -->
 		<section class="section-container">
-			<h1 class="section-container__title">Gradient Directions</h1>
+			<h1 class="section-container__title">Background Gradient Directions</h1>
 
 			<div class="section-container__content">
-				<div class="box bg-yellow-400">bg-yellow-400</div>
+				<div class="box gradient-box bg-linear-to-t from-sky-500 to-rose-500">
+					bottom → top
+					<div class="text-4xl w-full -mt-4">↑</div>
+				</div>
+
+				<div class="box gradient-box bg-linear-to-b from-sky-500 to-rose-500">
+					top → bottom
+					<div class="text-4xl w-full -mt-4">↓</div>
+				</div>
+
+				<div class="box gradient-box bg-linear-to-r from-sky-500 to-rose-500">
+					left → right
+					<div class="text-4xl w-full -mt-4">→</div>
+				</div>
+
+				<div class="box gradient-box bg-linear-to-l from-sky-500 to-rose-500">
+					right → left
+					<div class="text-4xl w-full -mt-4">←</div>
+				</div>
+
+				<div class="box gradient-box bg-linear-to-tr from-sky-500 to-rose-500">
+					bottom-left → top-right					
+					<div class="text-2xl w-full -mt-4">↗</div>
+				</div>
+
+				<div class="box gradient-box bg-linear-to-bl from-sky-500 to-rose-500">
+					top-right → bottom-left					
+					<div class="text-2xl w-full -mt-4">↙</div>
+				</div>
+
+				<div class="box gradient-box bg-linear-to-tl from-sky-500 to-rose-500">
+					bottom-right → top-left
+					<div class="text-2xl w-full -mt-4">↖</div>
+				</div>
+
+				<div class="box gradient-box bg-linear-to-br from-sky-500 to-rose-500">
+					top-left → bottom-right
+					<div class="text-2xl w-full -mt-4">↘</div>
+				</div>
 			</div>
 		</section>
+
+		<!-- Background Gradient Color Stops -->
+		<section class="section-container">
+			<h1 class="section-container__title">Background Gradient Color Stops</h1>
+
+			<div class="section-container__content">
+				<div class="box gradient-box bg-linear-to-r from-yellow-400 via-orange-500 to-red-600">
+					multiple color stops
+				</div>
+
+				<!-- gradient color with opacity -->
+				<div class="box gradient-box bg-linear-to-r from-red-600/90 via-orange-500/60 to-yellow-400/30">
+					gradient with opacity
+				</div>
+
+				<!-- Radial Gradient -->
+				<div class="box gradient-box bg-radial from-pink-500 to-green-500">
+					gradient with opacity
+				</div>
+				
+				<!-- Conic Gradient -->
+				<div class="box gradient-box bg-conic-from-50deg from-yellow-400 via-orange-500 to-red-500">
+					gradient with opacity
+				</div>
+
+				<!--  -->
+			</div>
+		</section>
+	</body>
 	</body>
 </html>
